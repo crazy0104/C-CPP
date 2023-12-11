@@ -1,0 +1,8 @@
+﻿cl : 命令行  warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  GenerateKeyExImpl.cpp
+D:\MyFile\SecurityAlgorithm\KeyGenDll_GenerateKeyEx\GenerateKeyExImpl.cpp(22,19): warning C4101: “byte_”: 未引用的局部变量
+D:\VS2022\IDE\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1374,5): warning MSB8012: TargetPath(D:\MyFile\SecurityAlgorithm\KeyGenDll_GenerateKeyEx\Debug\SeedKey.dll) 与 Linker 的 OutputFile 属性值(D:\MyFile\SecurityAlgorithm\KeyGenDll_GenerateKeyEx\Debug\SeednKey.dll)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+D:\VS2022\IDE\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1376,5): warning MSB8012: TargetName(SeedKey) 与 Linker 的 OutputFile 属性值(SeednKey)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+GenerateKeyExImpl.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+    正在创建库 .\Debug/SeednKey.lib 和对象 .\Debug/SeednKey.exp
+  GenerateKeyExImpl.vcxproj -> D:\MyFile\SecurityAlgorithm\KeyGenDll_GenerateKeyEx\Debug\SeedKey.dll

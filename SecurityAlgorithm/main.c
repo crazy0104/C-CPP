@@ -3,8 +3,8 @@
 #include "sha2.h"
 #include "windows.h"
 #include <stdio.h>
-const uint8_t cryptFactor[16]  = {1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8};
-const uint8_t serverSeed[4]  = {0x68 , 0x16 , 0xB4 , 0xD5};
+const uint8_t cryptFactor[16]  = {0x2c,0x5f,0xb7,0xd6,0xe7,0x07,0xba,0x88,0x38,0xf8,0xb1,0xfa,0x3a,0x8d,0xa5,0xdc};
+const uint8_t serverSeed[4]  = {0x74 , 0xFF , 0xAB , 0x66};
 uint8_t serverKey[4]   = {0x68 , 0x16 , 0xB4 , 0xD5};
 uint8_t decryptKey[4]   = {1 , 2 , 3 , 4};
 uint8_t clientKey[48];
@@ -44,7 +44,7 @@ int main()
     for(int i=0;i<48;i++)
         printf("0x%x ",clientKey[i]);
 
-    tempKey2 = SHA256(clientKey,48,tempKey1);  
+    tempKey2 = SHA256(clientKey,48, tempKey2);
     memcpy(hashRes,tempKey2,32);
     printf("\nhashRes:");
     for(int i=0;i<32;i++)

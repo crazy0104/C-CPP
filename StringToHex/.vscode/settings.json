@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "main.c": "cpp",
+        "sha2.c": "cpp",
+        "aes.c": "cpp",
+        "typeinfo": "c"
+    }
+}
